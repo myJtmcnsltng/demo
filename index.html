@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Disability Services Resource Center - Bay Area Chamber of Commerce, MI</title>
+    <link rel="shortcut icon" href="https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/3227/CMS/Logo/favicon.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+  </head>
+  <body>
+
+    <!--  Top Nav  -->
+    <div class="topnav">
+        <div class="row"> 
+            <div class=""col-xs-7 col-sm3 logo> 
+                <img style= "max-width:100%" alt="Bay City Chamber of Commerce Logo" src="D:/Alycia/images/DSRCnotext-e1594505219377.png">
+            </div>
+            <div class="headertext">
+                <h1>DSRC Asset Tracking</h1>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  
+    
+    <!-- Tab Links -->
+    <div class="tab">
+        <button class="tablinks" onClick="openCity(event, 'Cart')" id="defaultOpen">Cart</button>
+        <button class="tablinks" onClick="openCity(event, 'People')">People</button>
+        <button class="tablinks" onClick="openCity(event, 'Inventory')">Inventory</button>
+        <button class="tablinks" onClick="openCity(event, 'Reports')">Reports</button>
+        <button class="tablinks" onClick="openCity(event, 'Maintenance')">System Maintenance</button>
+    </div>
+    <div id="Cart" class="tabcontent">
+        <h3>Transactions</h3>
+        <form>
+            <table><tbody>
+                <tr>
+                    <label for="person">Customer</label>
+                    <input type="text" id="person" name="person">
+                    <button class="button" onclick="">Search</button>
+                </tr>
+                <tr>
+                    <label for="cart" >Items</label>
+                    <input type="text" id="cart" name="cart">
+                    <button class="button" onclick="">Item Search</button>
+                </tr>
+                <tr>
+                    <label for="date">Checkout Date</label>
+                    <input type="date" id="checkoutDate" name="checkoutDate">
+                </tr>
+                <tr>
+                    <label for="Notes">Notes</label>
+                    <input type="textarea" id="notes" name="notes" rows="6" cols="50">
+                </tr>
+                <tr>
+                    <button class="button" onclick="">Search</button>
+                    <button class="button" onclick="">Checkout</button>
+                </tr>
+
+            </tbody>
+            </table>
+
+        </form>
+    </div>
+    <div id="People" class="tabcontent">
+        <h3>People</h3>
+        <form>
+            <table><tbody>
+                <tr>
+                    <label for "type">Customer, Donor, or both</label>
+                    <select id="type" name="type">Type of Person>
+                        <option value=""></option>
+                        <option value="Customer">Customer</option>
+                        <option value="Donor">Donor</option>
+                        <option value="Both">Both</option>
+                    </select>    
+                </tr>
+                <tr>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname">
+                </tr>
+                <tr>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname">
+                </tr>
+                <tr>
+                    <label for="addr1">Adress 1</label>
+                    <input type="text" id="addr1" name="addr1">
+                </tr>
+                <tr>
+                    <label for="addr2">Adress 2</label>
+                    <input type="text" id="addr2" name="addr2">
+                </tr>
+                <tr>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+                </tr>
+                <tr>
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state">
+                </tr>
+                <tr>
+                    <label for="zipcode">Zip/Postal Code</label>
+                    <input type="text" id="zipcode" name="zipcode">
+                </tr>
+                <tr>
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone">
+                </tr>
+                <label for="altcontact">Alternate Contact</label>
+                    <input type="text" id="altcontact" name="altcontact">
+
+
+            </tbody>
+            </table>
+        </form>
+    </div>
+    <div id="Inventory" class="tabcontent">
+        <h4>Inventory</h4>
+        <form>
+            <table><tbody>
+                <tr>
+                    <label for "itemtype">DME or PCI</label>
+                    <select id="itemtype" name="itemtype">Type of Person>
+                        <option value=""></option>
+                        <option value="DME">DME</option>
+                        <option value="PCI">PCI</option>
+                    </select>    
+                </tr>
+                <tr>
+                    <label for="category">Category</label>
+                    <select id="type" name="category">Category of Item>
+                        <option value=""></option>
+                        <option value="Wheelchair">Wheelchair</option>
+                        <option value="Walker">Walker</option>
+						<option value="Gait Belt">Gate Belt</option>
+						<option value="Shower Chair">Shower Chair</option>
+                    </select> 
+                </tr>
+                <tr>
+                    <label for="allitems">Items</label>
+                    <input type="datalist" id="datalist" name="datalist">
+                </tr>
+            </tbody>
+            </table>
+        </form>
+
+    </div>
+    <div id="Report" class="tabcontent">
+        Put Reports form(s) here
+    </div>
+    <div id="Maintenance" class="tabcontent">
+        Put Maintenance form(s) here
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+            <script src="tabs.js">
+        </script>
+        <script>
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+        
+  </body>
+</html>
